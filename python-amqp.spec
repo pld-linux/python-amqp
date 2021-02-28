@@ -12,7 +12,7 @@ Summary(pl.UTF-8):	Biblioteka kliencka AMQP 0.9.1
 Name:		python-%{module}
 # keep 2.x here for python2 support
 Version:	2.6.1
-Release:	1
+Release:	2
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/a/amqp/%{module}-%{version}.tar.gz
