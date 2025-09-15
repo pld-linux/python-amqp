@@ -1,18 +1,18 @@
 #
 # Conditional build:
 %bcond_without	doc	# Sphinx documentation
-%bcond_without	tests	# unit tests
+%bcond_with	tests	# unit tests
 %bcond_without	python2 # CPython 2.x module
 %bcond_with	python3 # CPython 3.x module (built from python3-amqp.spec)
 
-%define 	module		amqp
+%define		module		amqp
 %define		pypi_name	amqp
 Summary:	AMQP 0.9.1 client library
 Summary(pl.UTF-8):	Biblioteka kliencka AMQP 0.9.1
 Name:		python-%{module}
 # keep 2.x here for python2 support
 Version:	2.6.1
-Release:	2
+Release:	3
 License:	BSD
 Group:		Libraries/Python
 Source0:	https://files.pythonhosted.org/packages/source/a/amqp/%{module}-%{version}.tar.gz
